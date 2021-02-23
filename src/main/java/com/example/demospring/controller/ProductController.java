@@ -30,7 +30,9 @@ public class ProductController {
     @PostMapping(path = "/search")
     public SearchResponseDTO Search(@RequestBody SearchRequestDTO request) {
 
-        return productService.getProduct(request);
+
+        return productService.getProductLocation(request);
+
 
     }
 }

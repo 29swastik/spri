@@ -13,4 +13,5 @@ public interface SearchClient {
     @RequestMapping(method = RequestMethod.GET, path = "solr/productCollection/select")
     Map<String, Object> getProducts(@RequestParam("q") String query);
 
+
 }

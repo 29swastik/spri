@@ -5,4 +5,5 @@ public interface SolrFieldNames {
     String IN_STOCK = "isInStock";
     String DESCRIPTION = "description";
     String SALE_PRICE = "salePrice";
+    String STOCK_LOCATION = "stockLocation";
 }
