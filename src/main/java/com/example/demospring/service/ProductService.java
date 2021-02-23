@@ -5,5 +5,5 @@ import com.example.demospring.dto.SearchResponseDTO;
 
 public interface ProductService {
 
-    SearchResponseDTO getProduct(SearchRequestDTO request, String id);
+    SearchResponseDTO getProduct(SearchRequestDTO request);
 }
