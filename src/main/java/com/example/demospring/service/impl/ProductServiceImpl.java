@@ -32,12 +32,12 @@ public class ProductServiceImpl implements ProductService{
             String title = (String) productClientResponse.get(SolrFieldNames.NAME);
             boolean inStock = (int) productClientResponse.get(SolrFieldNames.IN_STOCK) == 1? true: false;
             String description = (String) productClientResponse.get(SolrFieldNames.DESCRIPTION);
-            double salePrice = (double) productClientResponse.get(SolrFieldNames.SALE_PRICE);
+           // double salePrice = (double) productClientResponse.get(SolrFieldNames.SALE_PRICE);
 
             ProductDTO productDTO = new ProductDTO();
             productDTO.setInStock(inStock);
             productDTO.setTitle(title);
-            productDTO.setSalePrice(salePrice);
+         //   productDTO.setSalePrice(salePrice);
             productDTO.setDescription(description);
 
             productDTOS.add(productDTO);
